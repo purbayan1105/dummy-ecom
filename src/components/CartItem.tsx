@@ -49,7 +49,7 @@ const CartItem = ({ eachItem }: EachItemProps) => {
   };
   return (
     <>
-      <Card className="lg:mx-0 rounded-none shadow-none sm:bg-transparent">
+      <Card className="lg:mx-0 rounded-none shadow-none sm:bg-transparent overflow-x-hidden">
         <CardBody className="grid grid-cols-2  gap-3 poppins">
           <img src={eachItem.pImg} alt="" className="w-48" />
           <div className="space-y-8 mt-5">

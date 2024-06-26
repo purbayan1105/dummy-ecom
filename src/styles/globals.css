@@ -5,3 +5,15 @@
 .poppins {
   font-family: var(--var-poppins-);
 }
+
+@keyframes appearfromleft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+.appearfromleft {
+  animation: appearfromleft 0.5s forwards ease-in;
+}
