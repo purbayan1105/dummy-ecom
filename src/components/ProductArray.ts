@@ -1,0 +1,53 @@
+export type ObjProps = {
+  id: number,
+  pImg: string,
+  pName: string,
+  pDes: string,
+  isAdded: number,
+  pPrice: number,
+  pAlt: string,
+  pTotal: number,
+};
+
+export const productArray: ObjProps[] = [
+  {
+    id: 1,
+    pImg: "/earbuds.jpg",
+    pName: "Sony Super Stereo Speakers",
+    pDes: "Ultra-sound, noise cancelling properties will give you augmented experience in the field. One of the best from Setereoverse",
+    isAdded: 0,
+    pPrice: 1999,
+    pAlt: "speakers",
+    pTotal: 0,
+  },
+  {
+    id: 2,
+    pImg: "/headphones.jpg",
+    pName: "Sony Harmony Headphones",
+    pDes: "Ultra-sound, noise cancelling properties will give you augmented experience in the field. One of the best from Setereoverse",
+    isAdded: 0,
+    pPrice: 1299,
+    pAlt: "headphones",
+    pTotal: 0,
+  },
+  {
+    id: 3,
+    pImg: "/speakers.jpg",
+    pName: "Sony Ultra Base Stereo Earbuds",
+    pDes: "Ultra-sound, noise cancelling properties will give you augmented experience in the field. One of the best from Setereoverse",
+    isAdded: 0,
+    pPrice: 1499,
+    pAlt: "Earbuds",
+    pTotal: 0,
+  },
+  {
+    id: 4,
+    pImg: "/headphones2.jpg",
+    pName: "Sony  Stereo Headphones",
+    pDes: "Ultra-sound, noise cancelling properties will give you augmented experience in the field. One of the best from Setereoverse",
+    isAdded: 0,
+    pPrice: 2499,
+    pAlt: "headphones2",
+    pTotal: 0,
+  },
+];
