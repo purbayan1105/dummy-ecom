@@ -23,10 +23,10 @@ const ProductDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = productArray.find((p) => p.pName === id);
-
   if (!product) {
     return <></>;
   }
+
   const addToCartHandler = (key: number) => {
     setCartItem((prevCart: ObjProps[]) => {
       const existingItem = prevCart.find((item) => item.id === key);
@@ -46,7 +46,7 @@ const ProductDetail = () => {
           {
             ...product,
             isAdded: 1,
-            pTotal: product.pPrice,
+            pTotal: product?.pPrice,
           },
         ];
       }

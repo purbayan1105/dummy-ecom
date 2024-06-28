@@ -71,7 +71,10 @@ const DisplayProducts = ({ product }: ObjType) => {
     <>
       <Card className="w-50 lg:w-80 rounded-none lg:mx-12 mb-5">
         <CardBody className="space-y-2 lg:w-80">
-          <Link href={`/${product.pName}`} target="__blank" key={product.id}>
+          <Link
+            href={`/${product.pName.split(" ").join("-")}`}
+            target="__blank"
+            key={product.id}>
             <Image
               src={product.pImg}
               alt={product.pAlt}
